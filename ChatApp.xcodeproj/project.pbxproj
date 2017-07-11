@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A5F4A57CACABBEB70687C0B /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A32BEC9BEB2FFCD7B0C571 /* Pods_ChatApp.framework */; };
 		47252E401F15681600DB3EA4 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E3F1F15681600DB3EA4 /* TextModel.swift */; };
+		47252E421F156A4600DB3EA4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E411F156A4600DB3EA4 /* DataSource.swift */; };
+		47252E441F156AA500DB3EA4 /* ChatItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E431F156AA500DB3EA4 /* ChatItemsController.swift */; };
 		472E34111F15570600D4CB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E34101F15570600D4CB34 /* AppDelegate.swift */; };
 		472E34131F15570600D4CB34 /* ChatLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E34121F15570600D4CB34 /* ChatLogViewController.swift */; };
 		472E34161F15570600D4CB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E34141F15570600D4CB34 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		3121F900EECD8E12DFC741A2 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		42A32BEC9BEB2FFCD7B0C571 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47252E3F1F15681600DB3EA4 /* TextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		47252E411F156A4600DB3EA4 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		47252E431F156AA500DB3EA4 /* ChatItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsController.swift; sourceTree = "<group>"; };
 		472E340D1F15570600D4CB34 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472E34101F15570600D4CB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472E34121F15570600D4CB34 /* ChatLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				472E34171F15570600D4CB34 /* Assets.xcassets */,
 				472E34191F15570600D4CB34 /* LaunchScreen.storyboard */,
 				472E341C1F15570600D4CB34 /* Info.plist */,
+				47252E411F156A4600DB3EA4 /* DataSource.swift */,
+				47252E431F156AA500DB3EA4 /* ChatItemsController.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47252E441F156AA500DB3EA4 /* ChatItemsController.swift in Sources */,
 				47252E401F15681600DB3EA4 /* TextModel.swift in Sources */,
 				472E34131F15570600D4CB34 /* ChatLogViewController.swift in Sources */,
+				47252E421F156A4600DB3EA4 /* DataSource.swift in Sources */,
 				472E34111F15570600D4CB34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

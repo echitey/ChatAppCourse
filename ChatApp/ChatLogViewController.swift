@@ -14,6 +14,8 @@ class ChatLogViewController: BaseChatViewController {
     
     var presenter: BasicChatInputBarPresenter!
     
+    var dataSource = DataSource()
+    
     override func createPresenterBuilders() -> [ChatItemType : [ChatItemPresenterBuilderProtocol]] {
         return [ChatItemType: [ChatItemPresenterBuilderProtocol]]()
     }
@@ -39,6 +41,7 @@ class ChatLogViewController: BaseChatViewController {
             let message = MessageModel(uid: "", senderId: "", type: "", isIncoming: false, date: Date(), status: .success)
             let textMessage = TextMessageModel(messageModel: message, text: text)
             
+            dataSource.addTextMessage(message: textMessage)
         }
         return item
     }
