@@ -35,7 +35,10 @@ class ChatLogViewController: BaseChatViewController {
     
         let item = TextChatInputItem()
         item.textInputHandler = { text in
-            print(text)
+            
+            let message = MessageModel(uid: "", senderId: "", type: "", isIncoming: false, date: Date(), status: .success)
+            let textMessage = TextMessageModel(messageModel: message, text: text)
+            
         }
         return item
     }
