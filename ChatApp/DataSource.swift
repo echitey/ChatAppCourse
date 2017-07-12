@@ -30,7 +30,7 @@ class DataSource: ChatDataSourceProtocol {
     }
     
     var hasMorePrevious: Bool{
-        return false
+        return controller.totalMessages.count - controller.items.count > 0
     }
     
     func loadNext() {
@@ -38,7 +38,8 @@ class DataSource: ChatDataSourceProtocol {
     }
     
     func loadPrevious() {
-        
+        controller.loadPrevious()
+        self.delegate?.chatDataSourceDidUpdate(self, updateType: .pagination)
     }
     
     func addMessage(message: ChatItemProtocol){
