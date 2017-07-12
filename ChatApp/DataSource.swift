@@ -38,6 +38,7 @@ class DataSource: ChatDataSourceProtocol {
     
     func addTextMessage(message: ChatItemProtocol){
         self.controller.insertMessage(message: message)
+        self.delegate?.chatDataSourceDidUpdate(self)
     }
     
     func adjustNumberOfMessages(preferredMaxCount: Int?, focusPosition: Double, completion: (Bool) -> Void) {

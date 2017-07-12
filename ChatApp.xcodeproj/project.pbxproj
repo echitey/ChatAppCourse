@@ -11,6 +11,9 @@
 		47252E401F15681600DB3EA4 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E3F1F15681600DB3EA4 /* TextModel.swift */; };
 		47252E421F156A4600DB3EA4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E411F156A4600DB3EA4 /* DataSource.swift */; };
 		47252E441F156AA500DB3EA4 /* ChatItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E431F156AA500DB3EA4 /* ChatItemsController.swift */; };
+		47252E461F156F0C00DB3EA4 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E451F156F0C00DB3EA4 /* Decorator.swift */; };
+		47252E481F15730700DB3EA4 /* TextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E471F15730700DB3EA4 /* TextBuilder.swift */; };
+		47252E4A1F15755600DB3EA4 /* TextHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252E491F15755600DB3EA4 /* TextHandler.swift */; };
 		472E34111F15570600D4CB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E34101F15570600D4CB34 /* AppDelegate.swift */; };
 		472E34131F15570600D4CB34 /* ChatLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E34121F15570600D4CB34 /* ChatLogViewController.swift */; };
 		472E34161F15570600D4CB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E34141F15570600D4CB34 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		47252E3F1F15681600DB3EA4 /* TextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		47252E411F156A4600DB3EA4 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		47252E431F156AA500DB3EA4 /* ChatItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsController.swift; sourceTree = "<group>"; };
+		47252E451F156F0C00DB3EA4 /* Decorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		47252E471F15730700DB3EA4 /* TextBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBuilder.swift; sourceTree = "<group>"; };
+		47252E491F15755600DB3EA4 /* TextHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextHandler.swift; sourceTree = "<group>"; };
 		472E340D1F15570600D4CB34 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472E34101F15570600D4CB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472E34121F15570600D4CB34 /* ChatLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				47252E3F1F15681600DB3EA4 /* TextModel.swift */,
+				47252E471F15730700DB3EA4 /* TextBuilder.swift */,
+				47252E491F15755600DB3EA4 /* TextHandler.swift */,
 			);
 			name = TestMessage;
 			sourceTree = "<group>";
@@ -92,6 +100,7 @@
 				472E341C1F15570600D4CB34 /* Info.plist */,
 				47252E411F156A4600DB3EA4 /* DataSource.swift */,
 				47252E431F156AA500DB3EA4 /* ChatItemsController.swift */,
+				47252E451F156F0C00DB3EA4 /* Decorator.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -228,11 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47252E481F15730700DB3EA4 /* TextBuilder.swift in Sources */,
 				47252E441F156AA500DB3EA4 /* ChatItemsController.swift in Sources */,
 				47252E401F15681600DB3EA4 /* TextModel.swift in Sources */,
 				472E34131F15570600D4CB34 /* ChatLogViewController.swift in Sources */,
 				47252E421F156A4600DB3EA4 /* DataSource.swift in Sources */,
 				472E34111F15570600D4CB34 /* AppDelegate.swift in Sources */,
+				47252E461F156F0C00DB3EA4 /* Decorator.swift in Sources */,
+				47252E4A1F15755600DB3EA4 /* TextHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
