@@ -13,23 +13,23 @@ import ChattoAdditions
 
 class TextHandler: BaseMessageInteractionHandlerProtocol {
     
-    func userDidTapOnFailIcon(viewModel: ViewModel, failIconView: UIView) {
+    func userDidTapOnFailIcon(viewModel: TextViewModel, failIconView: UIView) {
         
     }
     
-    func userDidTapOnAvatar(viewModel: ViewModel) {
+    func userDidTapOnAvatar(viewModel: TextViewModel) {
         
     }
     
-    func userDidTapOnBubble(viewModel: ViewModel) {
+    func userDidTapOnBubble(viewModel: TextViewModel) {
         
     }
     
-    func userDidBeginLongPressOnBubble(viewModel: ViewModel) {
+    func userDidBeginLongPressOnBubble(viewModel: TextViewModel) {
         
     }
     
-    func userDidEndLongPressOnBubble(viewModel: ViewModel) {
+    func userDidEndLongPressOnBubble(viewModel: TextViewModel) {
         
     }
     

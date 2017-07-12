@@ -20,6 +20,8 @@
 		472E34181F15570600D4CB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E34171F15570600D4CB34 /* Assets.xcassets */; };
 		472E341B1F15570600D4CB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E34191F15570600D4CB34 /* LaunchScreen.storyboard */; };
 		47947FEF1F16C38700B8F268 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947FEE1F16C38700B8F268 /* PhotoModel.swift */; };
+		47947FF11F16C5DC00B8F268 /* PhotoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947FF01F16C5DC00B8F268 /* PhotoBuilder.swift */; };
+		47947FF31F16C97300B8F268 /* PhotoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947FF21F16C97300B8F268 /* PhotoHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		472E341A1F15570600D4CB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472E341C1F15570600D4CB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47947FEE1F16C38700B8F268 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		47947FF01F16C5DC00B8F268 /* PhotoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBuilder.swift; sourceTree = "<group>"; };
+		47947FF21F16C97300B8F268 /* PhotoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHandler.swift; sourceTree = "<group>"; };
 		8DCA2CCDE454577DCA4789A9 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				47947FEE1F16C38700B8F268 /* PhotoModel.swift */,
+				47947FF01F16C5DC00B8F268 /* PhotoBuilder.swift */,
+				47947FF21F16C97300B8F268 /* PhotoHandler.swift */,
 			);
 			name = PhotoMessage;
 			sourceTree = "<group>";
@@ -248,12 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47947FF11F16C5DC00B8F268 /* PhotoBuilder.swift in Sources */,
 				47947FEF1F16C38700B8F268 /* PhotoModel.swift in Sources */,
 				47252E481F15730700DB3EA4 /* TextBuilder.swift in Sources */,
 				47252E441F156AA500DB3EA4 /* ChatItemsController.swift in Sources */,
 				47252E401F15681600DB3EA4 /* TextModel.swift in Sources */,
 				472E34131F15570600D4CB34 /* ChatLogViewController.swift in Sources */,
 				47252E421F156A4600DB3EA4 /* DataSource.swift in Sources */,
+				47947FF31F16C97300B8F268 /* PhotoHandler.swift in Sources */,
 				472E34111F15570600D4CB34 /* AppDelegate.swift in Sources */,
 				47252E461F156F0C00DB3EA4 /* Decorator.swift in Sources */,
 				47252E4A1F15755600DB3EA4 /* TextHandler.swift in Sources */,

@@ -19,9 +19,12 @@ class ChatLogViewController: BaseChatViewController {
     override func createPresenterBuilders() -> [ChatItemType : [ChatItemPresenterBuilderProtocol]] {
         
         let textMessageBuilder = TextMessagePresenterBuilder(viewModelBuilder: TextBuilder(), interactionHandler: TextHandler())
+        let photoMessageBuilder = PhotoMessagePresenterBuilder(viewModelBuilder: PhotoBuilder(), interactionHandler: PhotoHandler())
         
         
-        return [TextModel.chatItemType : [textMessageBuilder]]
+        return [TextModel.chatItemType : [textMessageBuilder],
+                PhotoModel.chatItemType : [photoMessageBuilder]
+                ]
     }
 
     //CUSTOMIZING THE CHAT INPUT VIEW
@@ -61,7 +64,7 @@ class ChatLogViewController: BaseChatViewController {
             let date = Date()
             let timestamp = date.timeIntervalSinceReferenceDate
             let senderID = "me"
-            let message = MessageModel(uid: "\(senderID, timestamp)", senderId: senderID, type: "", isIncoming: false, date: date, status: .success)
+            let message = MessageModel(uid: "\(senderID, timestamp)", senderId: senderID, type: PhotoModel.chatItemType, isIncoming: false, date: date, status: .success)
             let photoMessage = PhotoModel(messageModel: message, imageSize: photo.size, image: photo)
             self.dataSource.addMessage(message: photoMessage)
             

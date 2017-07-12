@@ -10,7 +10,7 @@ import Foundation
 import Chatto
 import ChattoAdditions
 
-class ViewModel: TextMessageViewModel<TextModel>{
+class TextViewModel: TextMessageViewModel<TextModel>{
     
     override init(textMessage: TextModel, messageViewModel: MessageViewModelProtocol) {
         super.init(textMessage: textMessage, messageViewModel: messageViewModel)
@@ -20,13 +20,15 @@ class ViewModel: TextMessageViewModel<TextModel>{
 
 class TextBuilder: ViewModelBuilderProtocol {
     
+    let defaultMessageBuilder = MessageViewModelDefaultBuilder()
+    
     func canCreateViewModel(fromModel decoratedTextMessage: Any) -> Bool {
         return decoratedTextMessage is TextModel
     }
     
-    func createViewModel(_ decoratedTextMessage: TextModel) -> ViewModel {
+    func createViewModel(_ decoratedTextMessage: TextModel) -> TextViewModel {
         
-        let textMessageViewModel = ViewModel(textMessage: decoratedTextMessage, messageViewModel: MessageViewModelDefaultBuilder().createMessageViewModel(decoratedTextMessage))
+        let textMessageViewModel = TextViewModel(textMessage: decoratedTextMessage, messageViewModel: defaultMessageBuilder.createMessageViewModel(decoratedTextMessage))
         
         return textMessageViewModel
         
