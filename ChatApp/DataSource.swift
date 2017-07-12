@@ -16,6 +16,11 @@ class DataSource: ChatDataSourceProtocol {
     
     var controller = ChatItemsController()
     
+    init(totalMessages: [ChatItemProtocol]) {
+        controller.totalMessages = totalMessages
+        self.controller.loadIntoItemsArray()
+    }
+    
     var chatItems: [ChatItemProtocol]{
         return controller.items
     }
