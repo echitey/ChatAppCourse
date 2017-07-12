@@ -31,7 +31,7 @@ class ChatLogViewController: BaseChatViewController {
         appearence.sendButtonAppearance.title = "Send"
         appearence.textInputAppearance.placeholderText = "Type a message"
         
-        self.presenter = BasicChatInputBarPresenter(chatInputBar: inputBar, chatInputItems: [handleSend()], chatInputBarAppearance: appearence)
+        self.presenter = BasicChatInputBarPresenter(chatInputBar: inputBar, chatInputItems: [handleSend(), handlePhoto()], chatInputBarAppearance: appearence)
         
         return inputBar
     }
@@ -48,6 +48,18 @@ class ChatLogViewController: BaseChatViewController {
             let message = MessageModel(uid: "\(senderID, timestamp)", senderId: senderID, type: TextModel.chatItemType, isIncoming: false, date: date, status: .success)
             let textMessage = TextModel(messageModel: message, text: text.trimmingCharacters(in: .whitespacesAndNewlines))
             self.dataSource.addTextMessage(message: textMessage)
+        }
+        return item
+    }
+    
+    //FUNC TO HANDLE PHOTO
+    func handlePhoto() -> PhotosChatInputItem{
+        let item = PhotosChatInputItem(presentingController: self)
+        
+        item.photoInputHandler = { photo in
+        
+            
+            
         }
         return item
     }
