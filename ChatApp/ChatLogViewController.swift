@@ -47,7 +47,7 @@ class ChatLogViewController: BaseChatViewController {
             let senderID = "me"
             let message = MessageModel(uid: "\(senderID, timestamp)", senderId: senderID, type: TextModel.chatItemType, isIncoming: false, date: date, status: .success)
             let textMessage = TextModel(messageModel: message, text: text.trimmingCharacters(in: .whitespacesAndNewlines))
-            self.dataSource.addTextMessage(message: textMessage)
+            self.dataSource.addMessage(message: textMessage)
         }
         return item
     }
@@ -57,7 +57,13 @@ class ChatLogViewController: BaseChatViewController {
         let item = PhotosChatInputItem(presentingController: self)
         
         item.photoInputHandler = { photo in
-        
+            
+            let date = Date()
+            let timestamp = date.timeIntervalSinceReferenceDate
+            let senderID = "me"
+            let message = MessageModel(uid: "\(senderID, timestamp)", senderId: senderID, type: "", isIncoming: false, date: date, status: .success)
+            let photoMessage = PhotoModel(messageModel: message, imageSize: photo.size, image: photo)
+            self.dataSource.addMessage(message: photoMessage)
             
             
         }
